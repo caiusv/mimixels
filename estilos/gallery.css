@@ -1,0 +1,86 @@
+/**BODY**/
+
+body{
+    background-color: black;
+    background-image: url(../assets/bg.gif);
+    background-repeat: repeat;
+}
+
+/**MIMIXELS - HOME**/
+
+.mimixels-home{
+  height: auto;
+  width: 360px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 20vh;
+  left: 50vw;
+}
+
+/**GB DISPLAY**/
+
+.gb-display{
+  height: auto;
+  width: 900px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 70vh;
+  left: 50vw;
+}
+
+.screen-container{
+  height: 320px;
+  width: 480px;
+  position: absolute;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  transform: translate(-50%,-50%);
+  top: 68vh;
+  left: 50vw;
+  align-items: center;
+  justify-items: center;
+}
+
+.screen-container>a:first-child{
+  left: -15px;
+}
+
+.screen-container>a:last-child{
+  left: 422px;
+}
+
+
+  /**CAROUSEL**/
+
+  .image{
+    position: absolute;
+    height: auto;
+    width: 400px;
+    }
+
+    .carousel-caption{
+      font-family: pixelfont;
+      font-size: 10px;
+      color: white;
+      text-shadow: 1px 1px black;
+      }
+
+      .add-bottom{
+        bottom: -10px;
+      }
+
+
+  /**QUERIES**/
+
+@media (max-width: 425px) {
+    .facet_sidebar {
+      display: inline-block;
+    }
+  }
+
+  @font-face {
+    font-family: pixelfont;
+    src: url(../assets/webfontkit-20220311-092311/pixeled-webfont.woff)
+  }

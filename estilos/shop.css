@@ -1,0 +1,76 @@
+/**BODY**/
+
+body{
+    background-color: black;
+    background-image: url(../assets/bg.gif);
+    background-repeat: repeat;
+}
+
+/** MIMIXELS - HOME**/
+
+.mimixels-home{
+  height: auto;
+  width: 360px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 20vh;
+  left: 50vw;
+}
+
+/**TEXT**/
+
+.wip{
+  position: absolute;
+  font-family: pixelfont;
+  font-size: 16px;
+  color: white;
+  top: 15vh;
+  }
+
+  .wip-lower{
+    position: absolute;
+    font-family: pixelfont;
+    font-size: 7px;
+    color: white;
+    top: 22vh;
+    }
+
+/**GB DISPLAY**/
+
+.gb-display{
+  height: auto;
+  width: 900px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 70vh;
+  left: 50vw;
+}
+
+  .screen-container{
+    height: 320px;
+    width: 480px;
+    position: absolute;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    transform: translate(-50%,-50%);
+    top: 68vh;
+    left: 50vw;
+    align-items: center;
+    justify-items: center;
+  }
+ 
+
+/**QUERIES**/
+
+@media (max-width: 425px) {
+    .facet_sidebar {
+      display: inline-block;
+    }
+  }
+
+  @font-face {
+    font-family: pixelfont;
+    src: url(../assets/webfontkit-20220311-092311/pixeled-webfont.woff)
+  }
